@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F5E9"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/people_traveling"
+        android:scaleType="centerCrop"
+        android:alpha="0.9"
+        android:contentDescription="@string/background_image" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <TextView
+            android:id="@+id/tvKoreanTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <TextView
+            android:id="@+id/tvKoreanDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1" />
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#747DAC"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/btn_map"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_map"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="24dp" />
+
+        <Button
+            android:id="@+id/btnWeather"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#747DAC"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/btn_weather"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_weather"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="24dp" />
+
+        <Button
+            android:id="@+id/btnGuide"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#747DAC"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="가이드북"
+            android:textSize="18sp"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="24dp" />
+
+        <Button
+            android:id="@+id/btnSteps"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#747DAC"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/btn_steps"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_steps"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="24dp" />
+
+    </LinearLayout>
+</FrameLayout>
